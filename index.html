@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nano Converter</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <!-- header section start -->
+
+    <header class="header-section">
+      <div class="row">
+        <h1>Number Conversion</h1>
+      </div>
+    </header>
+
+    <!-- header section end -->
+
+    <!-- number section start -->
+
+    <section class="number-section">
+      <div class="row number-section-heading">
+        <h2>number system conversion</h2>
+      </div>
+      <div class="row number-section-content">
+        <form id="numberFormContainer">
+          <div class="form-group">
+            <label for="decimalField">decimal</label>
+            <input
+              data-number-base="decimal"
+              id="decimalField"
+              type="text"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="binaryField">binary</label>
+            <input
+              data-number-base="binary"
+              id="binaryField"
+              type="text"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="octalField">octal</label>
+            <input
+              data-number-base="octal"
+              id="octalField"
+              type="text"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="hexadecimalField">hexadecimal</label>
+            <input
+              data-number-base="hexadecimal"
+              id="hexadecimalField"
+              type="text"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <input class="btn btn-reset" type="submit" value="reset" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- number section end -->
+
+    <!-- text section start -->
+
+    <section class="text-section">
+      <div class="row text-section-heading">
+        <h2>text conversion</h2>
+      </div>
+      <div class="row text-section-content">
+        <form id="textFormContainer">
+          <div class="form-group">
+            <label for="textField">enter your text below</label>
+            <textarea
+              data-text-base="string"
+              id="textField"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="binaryTextField"
+              >enter your binary below (space seperated)</label
+            >
+            <textarea
+              data-text-base="binary"
+              id="binaryTextField"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <input class="btn btn-reset" type="submit" value="reset" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- text section end -->
+
+    <!-- author section start -->
+
+    <footer>
+      <p class="author-text">
+        build with 💜 by
+        <a target="_blank" href="https://shariarmozumder.netlify.app/"
+          >shariar mozumder</a
+        >
+      </p>
+      <p></p>
+    </footer>
+
+    <!-- author section end -->
+  </body>
+</html>

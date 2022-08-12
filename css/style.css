@@ -1,0 +1,242 @@
+/* reset code */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1dd881;
+    --secondary-color: #1a5555;
+    --background-color: #033333;
+    --font-color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    cursor: default;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    font-family: Montserrat;
+    color: var(--font-color);
+    background: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+p {
+    line-height: 1.7;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+input,
+textarea,
+button {
+    outline: none;
+    border: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+/* re-usable components */
+
+.row {
+    max-width: 80rem;
+    width: calc(100% - 3rem);
+    margin: auto;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: var(--font-color);
+    font-size: 1.7rem;
+    border-radius: 0.4rem;
+    text-transform: capitalize;
+    border: 0.2rem solid var(--primary-color);
+    background: var(--primary-color);
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    color: var(--primary-color);
+    background: transparent;
+}
+
+.header-section,
+.number-section,
+.text-section {
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+}
+
+/* header section start */
+
+.header-section {
+    text-align: center;
+    color: #fff;
+    background: tomato;
+}
+
+.header-section h1 {
+    text-transform: capitalize;
+}
+
+/* header section end */
+
+/* number section start */
+
+.number-section-heading {
+    padding: 1rem 0;
+}
+
+.number-section-heading h2 {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.number-section-content {
+    padding: 1rem 0;
+}
+
+.number-section-content form {
+    padding: 2rem 3rem;
+    border-radius: 0.6rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 2rem;
+    border: 0.2rem solid var(--secondary-color);
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group label {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem 0.5rem 1.5rem;
+    border-radius: 0.4rem;
+    border: 0.2rem solid transparent;
+    transition: all 0.3s;
+}
+
+.form-group input[type="text"]:hover,
+.form-group input[type="text"]:focus {
+    border-color: var(--primary-color);
+}
+
+.form-group:last-child {
+    align-items: flex-end;
+}
+
+/* number section end */
+
+/* text section start */
+
+.text-section-heading {
+    padding: 1rem 0;
+}
+
+.text-section-heading h2 {
+    text-transform: capitalize;
+}
+
+.text-section-content {
+    padding: 1rem 0;
+}
+
+.text-section-content form {
+    padding: 2rem 3rem;
+    border-radius: 0.6rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 2rem;
+    border: 0.2rem solid var(--secondary-color);
+}
+
+.form-group textarea {
+    width: 100%;
+    max-height: 15rem;
+    resize: none;
+    font-size: 1.9rem;
+    font-family: Poppins;
+    padding: 0.5rem 1rem 0.5rem 1.5rem;
+    border-radius: 0.4rem;
+    border: 0.2rem solid transparent;
+    transition: all 0.3s;
+}
+
+.form-group textarea:hover,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+}
+
+/* text section end */
+
+/* footer section start */
+
+footer {
+    margin-top: 2rem;
+    padding: 2rem 0;
+    background: var(--secondary-color);
+}
+
+.author-text {
+    font-size: 1.9rem;
+    color: var(--font-color);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.author-text a {
+    transition: all 0.3s;
+    color: tomato;
+}
+
+.author-text a:hover {
+    text-decoration: underline;
+}
+
+/* footer section end */
